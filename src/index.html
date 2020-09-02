@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="main-wrapper">
+        <form id="regForm" action="" class="form">
+
+            <div class="step">
+                <div class="form__title">Register a new user</div>
+                <input type="text" name="First Name" id="firstName" placeholder="First Name*" class="form__field" required/>
+                <input type="text" name="Last Name" id="lastName" placeholder="Last Name*" class="form__field" required/>
+                <input type="text" name="Login" placeholder="Login*" class="form__field" required/>
+                <input type="email" name="Email" id="email" placeholder="Email*" class="form__field" required/>
+                <input type="text" name="Company Name" placeholder="Company Name" class="form__field" />
+                <input type="password" name="Password" id="password" placeholder="Password*" class="form__field" required/>
+                <input type="password"  id="passwordConfirmation" placeholder="Confirm Password*" class="form__field" required/>
+                <button type="button" id="firstStep" onclick="nextStep()" class="btn btn-primary">Next Step</button>
+            </div>
+
+            <div class="step">
+                <div class="form__title">Choose your specialization</div>
+                <select name="Department" id="departments" class="form__field" onchange="chooseDepartment();" required>
+                    <option value="" selected disabled hidden>Departmens</option>
+                </select>
+                <select name="Vacancy" id="vacancies" disabled="disabled" class="form__field" required>
+                    <option value="" selected disabled hidden>Vacancies</option>
+                </select>
+                <button type="submit" id="lastStep" onclick="nextStep();" class="btn btn-primary">Next Step</button>
+            </div>
+
+            <div class="step">
+                <div class="form__title">Your personal info</div>
+                <div id="output" class="result-form"></div>
+                <div class="btn-row">
+                    <button type="button" id="cancel" onclick="nextStep(-2);" class="btn btn-primary">Cancel</button>
+                    <button type="button" id="save" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+        </form>
+    </main>    
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>
