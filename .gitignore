@@ -1,66 +1,23 @@
-/vendor/
-/bin/vendor/
+package-lock.json
 
-/.idea/
-/.psh.yaml.override
-/.php_cs.cache
-/docker-compose.override.yml
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-/config/jwt/*
-!/config/jwt/.gitkeep
-/config/packages/local.yaml
-/config/packages/local.yml
+# testing
+/coverage
 
-/custom/*
+# production
+/build
 
-/build/*
-!/build/artifacts/.gitkeep
-!/build/media/.gitkeep
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-/public/fonts/*
-!/public/fonts/.gitkeep
-/public/img/*
-!/public/img/.gitkeep
-/public/css/*
-!/public/css/.gitkeep
-/public/js/*
-!/public/js/.gitkeep
-/public/media/*
-!/public/media/.gitkeep
-/public/theme/*
-/public/sitemap/*
-/public/thumbnail/*
-!/public/thumbnail/.gitkeep
-/public/plugins/*
-/public/assets/*
-
-/files/*
-/.docker-sync/
-/dev-ops/docker/_volumes/*
-/dev-ops/analyze/node_modules
-/dev-ops/analyze/vendor
-/dev-ops/analyze/vendor-bin/**/vendor
-/dev-ops/analyze/.jscpd
-/dev-ops/analyze/tmp
-!/dev-ops/analyze/tmp/**/.gitkeep
-
-/selenium-debug.log
-chromedriver.log
-/platform/
-
-###> symfony/framework-bundle ###
-.env
-/public/bundles/
-/var/
-/vendor/
-###< symfony/framework-bundle ###
-
-###> symfony/phpunit-bridge ###
-.phpunit
-/phpunit.xml
-###< symfony/phpunit-bridge ###
-###> phpunit/phpunit ###
-/phpunit.xml
-###< phpunit/phpunit ###
-
-/composer.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
