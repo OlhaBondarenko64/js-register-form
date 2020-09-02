@@ -1,10 +1,10 @@
-let currentStep = 0;
 const step = document.querySelectorAll(".step");
 const lastStep = document.querySelector("#lastStep");
 const form = document.querySelector('#regForm');
 const output = document.querySelector('#output');
 const clearStorage = document.querySelector('#cancel');
 const save = document.querySelector('#save');
+let currentStep = 0;
 
 function showStep(n) {
   step[n].style.display = "block";
