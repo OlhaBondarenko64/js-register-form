@@ -17,7 +17,7 @@ function nextStep() {
     currentStep = ++currentStep; 
     if (currentStep >= step.length) {
         form.submit();
-        return false;
+        return false; 
     } 
     showStep(currentStep);
 }

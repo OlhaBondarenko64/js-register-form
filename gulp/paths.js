@@ -24,7 +24,6 @@ module.exports = {
     html: 'build/index.html',
     css: 'build/css/**/*.css',
     js: 'build/js/**/*.js',
-    js: 'build/js/**/*.json',
   },
   clean: 'build/',
 };
